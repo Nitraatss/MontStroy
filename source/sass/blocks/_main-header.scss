@@ -163,7 +163,7 @@
 
     font-size: 0;
 
-    background-image: url("../img/icons/tablet-burger.svg");
+    background-image: url("../img/icons/burger-tablet.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -177,6 +177,7 @@
     z-index: 10;
 
     display: none;
+    width: 100%;
     max-width: 207px;
   }
 
@@ -238,6 +239,38 @@
   }
 
   .main-header__contacts-link {
+    display: none;
+  }
+}
+
+@media screen and (max-width: $tablet-width) {
+  .main-header__wrapper {
+    max-width: 100%;
+    padding: 7px 20px;
+    padding-bottom: 6px;
+  }
+
+  .main-header__logo {
+    margin-right: auto;
+  }
+
+  .main-header__navigation {
+    margin: 0;
+  }
+
+  .main-header__toggler {
+    width: 18px;
+    height: 14px;
+    margin-top: -1px;
+
+    background-image: url("../img/icons/burger-mobile.svg");
+  }
+
+  .main-header__list {
+    max-width: calc(100% - 1px);
+  }
+
+  .main-header__phone {
     display: none;
   }
 }
