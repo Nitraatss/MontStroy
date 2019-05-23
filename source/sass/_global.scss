@@ -88,3 +88,15 @@ input[type="radio"].visually-hidden {
 
   background-color: $font-color;
 }
+
+@media screen and (max-width: $desktop-width) {
+  body {
+    min-width: $tablet-width;
+  }
+}
+
+@media screen and (max-width: $tablet-width) {
+  body {
+    min-width: $mobile-width;
+  }
+}

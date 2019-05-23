@@ -87,13 +87,7 @@ gulp.task(`images`, function (done) {
 gulp.task(`sprite`, function () {
   return gulp
     .src([`source/img/**/*.svg`])
-    .pipe(
-        imagemin([
-          imagemin.svgo({
-            plugins: [{removeAttrs: {attrs: [`fill`]}}]
-          })
-        ])
-    )
+    .pipe(imagemin([imagemin.svgo()]))
     .pipe(
         svgstore({
           inlineSvg: true
