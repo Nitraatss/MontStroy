@@ -161,11 +161,11 @@
       display: inline-block;
       width: 100%;
       height: 2px;
-      border-radius: 2px;
 
       font-size: 0;
 
       background-color: #959595;
+      border-radius: 2px;
       transform: translateY(-50%);
 
       transition: width 0.3s ease-in-out;
@@ -180,9 +180,9 @@
       display: block;
       width: 100%;
       height: 2px;
-      border-radius: 2px;
 
       background-color: #959595;
+      border-radius: 2px;
 
       transition: all 0.3s ease-in-out;
     }
@@ -202,11 +202,13 @@
 
       &::before {
         top: 50%;
+
         transform: translateY(-50%) rotate(45deg);
       }
 
       &::after {
         bottom: 50%;
+
         transform: translateY(50%) rotate(-45deg);
       }
     }
@@ -235,36 +237,21 @@
     width: 100%;
     max-width: 100%;
     min-height: 40px;
+    margin: 0;
     padding: 14px;
+    padding-top: 12px;
 
     background-color: rgb(231, 231, 231);
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 1px 1.98px 0.02px rgba(0, 0, 0, 0.05);
 
     &:first-of-type {
       display: none;
     }
 
-    &:nth-of-type(n) {
-      margin: 0;
-    }
-
-    &:last-of-type {
-      &::after {
-        display: none;
-      }
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 100%;
-      left: 0;
-      z-index: 10;
-
-      display: block;
-      width: 100%;
-      height: 2px;
-
-      box-shadow: inset 0 1px 1.98px 0.02px rgba(0, 0, 0, 0.05);
+    &:nth-of-type(2) {
+      border-top: 0;
+      box-shadow: none;
     }
   }
 
