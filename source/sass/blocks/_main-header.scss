@@ -12,7 +12,7 @@
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  max-width: $desktop-width;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 20px 15px;
 }
@@ -93,6 +93,7 @@
   padding-right: 35px;
   padding-bottom: 14px;
   padding-left: 36px;
+  text-transform: none;
 
   font-size: 16px;
   line-height: 1;
