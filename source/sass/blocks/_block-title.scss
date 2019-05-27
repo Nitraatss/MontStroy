@@ -36,3 +36,15 @@
     background-color: black;
   }
 }
+
+@media screen and (max-width: $desktop-width) {
+  .block-title {
+    font-size: 26px;
+    line-height: 1;
+    letter-spacing: 1.4px;
+
+    &::after {
+      display: none;
+    }
+  }
+}

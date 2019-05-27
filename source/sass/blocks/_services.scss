@@ -123,3 +123,129 @@
     text-decoration: underline;
   }
 }
+
+@media screen and (max-width: $desktop-width) {
+  .services__wrapper {
+    padding-top: 0;
+  }
+
+  .services__block-title {
+    margin-bottom: 25px;
+  }
+
+  .services__service {
+    max-width: calc(50% - 10px);
+    min-height: auto;
+    padding: 0;
+
+    &::before {
+      display: none;
+    }
+
+    &:nth-of-type(n) {
+      margin: 0;
+      margin-bottom: 10px;
+    }
+
+    &:nth-of-type(2n-1) {
+      margin-right: auto;
+    }
+  }
+
+  .single-service__service-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 50px;
+    margin: 0;
+    padding: 4px;
+    padding-right: 34px;
+    padding-left: 22px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.1;
+
+    background-color: rgba(244, 244, 244, 1);
+    cursor: pointer;
+
+    transition: background-color 0.3s ease-in-out;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 20px;
+
+      display: block;
+      width: 8px;
+      height: 5px;
+
+      background-image: url("../img/icons/dropdown.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      transform: translateY(-50%);
+      opacity: 0.3;
+
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    &--active {
+      background-color: rgb(215, 215, 215);
+
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
+
+  .single-service__list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    display: none;
+
+    background-color: rgba(244, 244, 244, 1);
+
+    &--active {
+      z-index: 10;
+
+      display: flex;
+    }
+  }
+
+  .services__item {
+    margin: 0;
+  }
+
+  .services__link {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 100%;
+    min-height: 47px;
+    padding: 4px 22px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+
+    border-bottom: 1px solid rgb(232, 232, 232);
+
+    transition: box-shadow 0.3s ease-in-out;
+
+    &:focus,
+    &:hover,
+    &:active {
+      position: relative;
+      z-index: 5;
+
+      text-decoration: none;
+
+      border: 1px solid rgb(0, 255, 215);
+      box-shadow: 0 2px 6.3px 0.7px rgba(0, 255, 216, 0.65);
+    }
+  }
+}
