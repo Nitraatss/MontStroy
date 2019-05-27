@@ -90,49 +90,13 @@
 }
 
 .main-info__anchor {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   min-width: 298px;
   min-height: 56px;
   margin-right: 21px;
   padding: 14px;
 
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 26px;
-  color: black;
-  text-transform: uppercase;
-
-  background-color: #00ffd7;
-  border: 1px solid #00ffd7;
-
-  transition: box-shadow 0.3s ease-in-out;
-
-  &:focus {
-    outline: none;
-  }
-
   &:last-of-type {
     margin-right: 0;
-  }
-
-  &:focus,
-  &:hover,
-  &:active {
-    box-shadow: 0 2px 4.75px 0.25px rgba(0, 255, 215, 0.6);
-  }
-
-  &--dark {
-    color: white;
-
-    background-color: transparent;
-
-    &:focus,
-    &:hover,
-    &:active {
-      box-shadow: 0 2px 6.3px 0.7px rgba(0, 255, 215, 0.65);
-    }
   }
 }
 

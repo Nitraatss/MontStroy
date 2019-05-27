@@ -1,0 +1,56 @@
+.site-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  color: black;
+  text-transform: uppercase;
+  word-wrap: break-word;
+
+  background-color: $site-color;
+  border: 1px solid $site-color;
+
+  transition: box-shadow 0.3s ease-in-out;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus,
+  &:hover,
+  &:active {
+    box-shadow: 0 2px 4.75px 0.25px rgba(0, 255, 215, 0.6);
+  }
+
+  &--dark {
+    color: white;
+
+    background-color: transparent;
+
+    &:focus,
+    &:hover,
+    &:active {
+      box-shadow: 0 2px 6.3px 0.7px rgba(0, 255, 215, 0.65);
+    }
+  }
+
+  &--black {
+    color: white;
+    text-transform: capitalize;
+
+    background-color: black;
+    border: 1px solid black;
+
+    &:focus,
+    &:hover,
+    &:active {
+      box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.3);
+    }
+  }
+}

@@ -88,35 +88,14 @@
 }
 
 .main-header__contacts-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 100%;
   min-height: 45px;
   padding-top: 14px;
   padding-right: 35px;
   padding-bottom: 14px;
   padding-left: 36px;
 
-  font-weight: 500;
   font-size: 16px;
   line-height: 1;
-  color: black;
-  word-wrap: break-word;
-
-  background-color: $site-color;
-
-  transition: box-shadow 0.3s ease-in-out;
-
-  &:focus {
-    outline: none;
-  }
-
-  &:focus,
-  &:hover,
-  &:active {
-    box-shadow: 0 2px 4.75px 0.25px rgba(0, 255, 215, 0.6);
-  }
 }
 
 @media screen and (max-width: $desktop-width) {
