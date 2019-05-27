@@ -2,16 +2,14 @@
   position: relative;
   z-index: 5;
 
-  display: block;
   width: 100%;
   max-width: 100%;
 }
 
 .features__wrapper {
-  width: 100%;
-  max-width: $desktop-width;
-  margin: 0 auto;
   padding-bottom: 78px;
+
+  @include wrapper;
 }
 
 .features__text {
@@ -27,8 +25,6 @@
   width: 100%;
   max-width: 100%;
   margin: 0;
-  padding: 0 10px;
-  padding-right: 20px;
 
   list-style: none;
 }
@@ -146,9 +142,9 @@
     justify-content: space-between;
     align-items: stretch;
     max-width: 724px;
-    padding: 0;
     margin: 0 auto;
     margin-bottom: 24px;
+    padding: 0;
   }
 
   .features__item {
@@ -233,8 +229,9 @@
 
 @media screen and (max-width: $tablet-width) {
   .features {
-    padding-top: 34px;
+    padding-top: 36px;
   }
+
   .features__wrapper {
     padding: 0 20px;
   }
@@ -260,7 +257,7 @@
     display: none;
     max-width: 280px;
     min-height: 200px;
-    padding-top: 120px;
+    padding-top: 116px;
     padding-right: 60px;
     padding-left: 60px;
 
@@ -290,8 +287,8 @@
   }
 
   .feature__dot {
-    width: 4px;
-    height: 4px;
+    width: 6px;
+    height: 6px;
 
     &--active {
       width: 8px;

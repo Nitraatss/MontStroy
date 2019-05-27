@@ -27,13 +27,11 @@
 }
 
 .main-info__wrapper {
+  @include wrapper;
+
   position: relative;
   z-index: 5;
 
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
   padding-top: 158px;
 }
 
@@ -165,10 +163,6 @@
     min-width: 290px;
 
     font-size: 16px;
-  }
-
-  .main-info__features {
-    display: none;
   }
 }
 
