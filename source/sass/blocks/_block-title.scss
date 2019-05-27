@@ -8,13 +8,13 @@
   max-width: 100%;
   margin: 0;
   padding: 0;
+  margin-left: 4px;
 
   font-weight: 700;
   font-size: 30px;
   line-height: 50px;
   text-transform: uppercase;
   letter-spacing: 1.7px;
-  padding-left: 4px;
 
   span {
     display: inline-block;
@@ -42,9 +42,17 @@
     font-size: 26px;
     line-height: 1;
     letter-spacing: 1.4px;
+    margin-left: 2px;
 
     &::after {
       display: none;
     }
+  }
+}
+
+@media screen and (max-width: $tablet-width) {
+  .block-title {
+    margin-left: 0;
+    font-size: 20px;
   }
 }

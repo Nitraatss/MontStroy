@@ -134,8 +134,6 @@
 @media screen and (max-width: $desktop-width) {
   .features__wrapper {
     padding: 0 4px;
-    padding-top: 69px;
-    padding-bottom: 48px;
   }
 
   .features__list {
@@ -228,10 +226,6 @@
 }
 
 @media screen and (max-width: $tablet-width) {
-  .features {
-    padding-top: 36px;
-  }
-
   .features__wrapper {
     padding: 0 20px;
   }
