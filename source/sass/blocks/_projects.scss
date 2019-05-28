@@ -24,3 +24,23 @@
 .projects__single-project {
   margin-bottom: 3px;
 }
+
+@media screen and (max-width: $desktop-width) {
+  .projects__block-title {
+    margin-bottom: 41px;
+  }
+
+  .projects__single-project {
+    margin-bottom: 10px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media screen and (max-width: $desktop-width) {
+  .projects__block-title {
+    margin-bottom: 15px;
+  }
+}
