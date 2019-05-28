@@ -17,3 +17,16 @@
     padding-left: 20px;
   }
 }
+
+@mixin object-fit($fit: fill, $position: null) {
+  -o-object-fit: $fit;
+  object-fit: $fit;
+  @if $position {
+    font-family: "object-fit: #{$fit}; object-position: #{$position}";
+
+    -o-object-position: $position;
+    object-position: $position;
+  } @else {
+    font-family: "object-fit: #{$fit}";
+  }
+}
