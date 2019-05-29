@@ -27,6 +27,9 @@
 }
 
 @media screen and (max-width: $desktop-width) {
+  .projects {
+    margin-bottom: 86px;
+  }
   .projects__block-title {
     margin-bottom: 41px;
   }
