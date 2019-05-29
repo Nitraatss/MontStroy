@@ -24,13 +24,21 @@
     <header class="main-header">
       <div class="main-header__wrapper">
         <a class="main-header__logo" href="#">
-          <img
-            class="main-header__logo-image"
-            src="./img/logo.png"
-            width="141"
-            height="60"
-            alt="Логотип MontStroy"
-          />
+          <picture>
+            <source
+              type="image/webp"
+              srcset="./img/logo.webp 1x, ./img/logo.webp 2x"
+            />
+
+            <img
+              class="main-header__logo-image"
+              src="./img/logo.png"
+              srcset="./img/logo.png 2x"
+              width="141"
+              height="60"
+              alt="Логотип MontStroy"
+            />
+          </picture>
         </a>
         <nav class="main-header__navigation">
           <button class="main-header__toggler" type="button">
@@ -773,43 +781,86 @@
 
       <section class="partners">
         <div class="partners__wrapper">
-          <h2 class="partners__block-title"><span>Партнеры</span></h2>
+          <h2 class="partners__block-title block-title">
+            <span>Партнеры</span>
+          </h2>
           <div class="partners__slider">
             <div class="partners__slide">
-              <img
-                class="partners__logo"
-                src="./img/partner-ava.png"
-                width="270"
-                height="135"
-                alt="Партнер"
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="./img/partner-ava.webp 1x, ./img/partner-ava.webp 2x"
+                />
+
+                <img
+                  class="partners__logo"
+                  src="./img/partner-ava.png"
+                  srcset="./img/partner-ava.png 2x"
+                  width="270"
+                  height="135"
+                  alt="AVA Company"
+                />
+              </picture>
             </div>
             <div class="partners__slide">
-              <img
-                class="partners__logo"
-                src="./img/partner-mirror.png"
-                width="270"
-                height="135"
-                alt="Партнер"
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./img/partner-mirror.webp 1x,
+                    ./img/partner-mirror.webp 2x
+                  "
+                />
+
+                <img
+                  class="partners__logo"
+                  src="./img/partner-mirror.png"
+                  srcset="./img/partner-mirror.png 2x"
+                  width="270"
+                  height="135"
+                  alt="MIRROR Buisness Center"
+                />
+              </picture>
             </div>
             <div class="partners__slide">
-              <img
-                class="partners__logo"
-                src="./img/partner-shield.png"
-                width="270"
-                height="135"
-                alt="Партнер"
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./img/partner-shield.webp 1x,
+                    ./img/partner-shield.webp 2x
+                  "
+                />
+
+                <img
+                  class="partners__logo"
+                  src="./img/partner-shield.png"
+                  srcset="./img/partner-shield.png 2x"
+                  width="270"
+                  height="135"
+                  alt="SHIELD Охранное предприятие"
+                />
+              </picture>
             </div>
             <div class="partners__slide">
-              <img
-                class="partners__logo"
-                src="./img/partner-heat.png"
-                width="270"
-                height="135"
-                alt="Партнер"
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./img/partner-heat.webp 1x,
+                    ./img/partner-heat.webp 2x
+                  "
+                />
+
+                <img
+                  class="partners__logo"
+                  src="./img/partner-heat.png"
+                  srcset="./img/partner-heat.png 2x"
+                  width="270"
+                  height="135"
+                  alt="ЗАО НТФ ТЕПЛОДОМЭНЕРГ"
+                />
+              </picture>
             </div>
           </div>
           <div class="partners__controls">
