@@ -144,10 +144,6 @@
     }
   }
 
-  .single-project__link {
-    display: none;
-  }
-
   .single-project__title {
     min-height: 0;
     margin-bottom: 15px;
@@ -175,6 +171,10 @@
         font-size: 16px;
       }
     }
+  }
+
+  .single-project__link {
+    height: 24px;
   }
 
   .single-project__title {
