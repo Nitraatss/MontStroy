@@ -1,1 +1,3 @@
-console.log(`Heroes never die!`);
+import map from "./map";
+
+map();

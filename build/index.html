@@ -15,6 +15,7 @@
     <link rel="preload" href="./fonts/Roboto-Medium.woff2" as="font">
     <link rel="preload" href="./fonts/Roboto-Bold.woff2" as="font">
     <link rel="stylesheet" type="text/css" href="./css/style.min.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
   </head>
 
   <body>
@@ -667,7 +668,10 @@
         </div>
       </section>
 
-      <section class="map"><h2>Карта</h2></section>
+      <section class="map">
+        <h2 class="map__block-title block-title">Контакты</h2>
+        <div class="map__wrapper" id="map"></div>
+      </section>
     </main>
 
     <footer class="main-footer">
