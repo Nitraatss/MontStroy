@@ -1,6 +1,8 @@
 .map {
   width: 100%;
   max-width: 100%;
+
+  border-bottom: 2px solid $site-color;
 }
 
 .map__block-title {
@@ -14,9 +16,6 @@
 }
 
 @media screen and (max-width: $desktop-width) {
-  .map {
-    border-bottom: 2px solid $site-color;
-  }
   .map__wrapper {
     height: 348px;
   }
@@ -24,8 +23,8 @@
 
 @media screen and (max-width: $tablet-width) {
   .map__block-title {
-    margin-bottom: 20px;
     display: flex;
+    margin-bottom: 20px;
     padding-left: 20px;
   }
 
