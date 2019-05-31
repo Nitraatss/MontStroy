@@ -150,7 +150,7 @@
 
       <section class="services" id="services">
         <div class="services__wrapper">
-          <h2 class="services__block-title block-title">Услуги</h2>
+          <h2 class="services__block-title block-title"><span>Услуги</span></h2>
           <div class="services__pool">
             <div class="services__single-service single-service">
               <p class="single-service__title">Проектирование</p>
@@ -405,7 +405,9 @@
 
       <section class="projects">
         <div class="projects__wrapper">
-          <h2 class="projects__block-title block-title">Проекты</h2>
+          <h2 class="projects__block-title block-title">
+            <span>Проекты</span>
+          </h2>
 
           <div class="projects__pool">
             <article class="projects__single-project single-project">
@@ -783,7 +785,9 @@
 
       <section class="partners">
         <div class="partners__wrapper">
-          <h2 class="partners__block-title block-title">Партнеры</h2>
+          <h2 class="partners__block-title block-title">
+            <span>Партнеры</span>
+          </h2>
           <div class="partners__slider">
             <div class="partners__slide partners__slide--previous">
               <picture>
@@ -890,7 +894,7 @@
       </section>
 
       <section class="map">
-        <h2 class="map__block-title block-title">Контакты</h2>
+        <h2 class="map__block-title block-title"><span>Контакты</span></h2>
         <div class="map__wrapper" id="map"></div>
       </section>
     </main>
@@ -932,35 +936,48 @@
           <div class="main-footer__contacts contacts" id="contacts">
             <form class="contacts__form" method="post" action="#">
               <p class="contacts__form-title">Cвяжитесь с нами</p>
-              <input
-                class="contacts__input contacts__input--name"
-                name="name"
-                type="text"
-                placeholder="Имя"
-              />
-              <input
-                class="contacts__input contacts__input--phone"
-                name="phone"
-                type="tel"
-                placeholder="Телефон"
-              />
-              <input
-                class="contacts__input contacts__input--email"
-                name="email"
-                type="email"
-                placeholder="Email"
-              />
-              <input
-                class="contacts__input contacts__input--message"
-                name="message"
-                type="text"
-                placeholder="Сообщение"
-              />
+              <div class="contacts__wrapper">
+                <input
+                  class="contacts__input contacts__input--name"
+                  name="name"
+                  type="text"
+                  placeholder="Имя"
+                />
+                <input
+                  class="contacts__input contacts__input--phone"
+                  name="phone"
+                  type="tel"
+                  placeholder="Телефон"
+                />
+                <input
+                  class="contacts__input contacts__input--email"
+                  name="email"
+                  type="email"
+                  placeholder="E-mail"
+                />
+                <input
+                  class="contacts__input contacts__input--message"
+                  name="message"
+                  type="text"
+                  placeholder="Сообщение"
+                />
+              </div>
+              <p class="contacts__info">
+                Заполняя форму на сайте, вы соглашаетесь с нашей<br />
+                <a href="#">Политикой конфиденциальности</a>
+              </p>
+              <button
+                class="contacts__submit contacts__site-button site-button site-button--black"
+                type="submit"
+              >
+                Отправить
+              </button>
             </form>
             <ul class="contacts__list">
               <li class="contacts__item">
                 <a class="contacts__link contacts__link--adress" href="#">
-                  Варшавское шоссе, д, 118, к.1 Бизнес-центр «ВАРШАВКА Sky»
+                  Варшавское шоссе,<br />д, 118, к.1 Бизнес-центр<br />«ВАРШАВКА
+                  Sky»
                 </a>
               </li>
               <li class="contacts__item">

@@ -11,13 +11,121 @@
   bottom: 0;
   left: 0;
 
+  display: block;
   width: 100%;
   max-width: 580px;
+  min-height: 580px;
+  margin: 0;
+  padding-top: 47px;
+  padding-right: 75px;
+  padding-bottom: 37px;
+  padding-left: 75px;
 
-  background-color: red;
+  background-color: white;
+}
+
+.contacts__form-title {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  margin-bottom: 36px;
+
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 40px;
+  text-align: center;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  word-wrap: break-word;
+}
+
+.contacts__wrapper {
+  display: flex;
+
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  padding-right: 30px;
+  margin-bottom: 28px;
+}
+
+.contacts__input {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 14px;
+  margin-bottom: 26px;
+
+  font-size: 20px;
+  line-height: 50px;
+  color: black;
+
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid #cccccc;
+
+  &--name {
+    margin-right: auto;
+  }
+
+  &--name,
+  &--phone {
+    max-width: 178px;
+  }
+
+  &--email {
+    margin-bottom: 37px;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &::placeholder {
+    color: black !important;
+
+    opacity: 1;
+  }
+}
+
+.contacts__info {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  margin-bottom: 38px;
+
+  font-size: 12px;
+  line-height: 1.5;
+  font-family: "Roboto";
+  text-align: center;
+  color: rgba(0, 0, 0, 0.502);
+
+  a {
+    border-bottom: 1px dotted black;
+    padding-bottom: 4px;
+  }
+}
+
+.contacts__submit {
+  min-width: 230px;
+  min-height: 60px;
+  font-size: 25px;
+  letter-spacing: 0.4px;
+  margin: 0 auto;
 }
 
 .contacts__list {
+  position: relative;
+  top: -7px;
+
   display: block;
   width: 100%;
   max-width: 100%;
@@ -30,7 +138,11 @@
 .contacts__item {
   width: 100%;
   max-width: 100%;
-  margin-bottom: 48px;
+  margin-bottom: 45px;
+
+  &:nth-of-type(2) {
+    margin-bottom: 36px;
+  }
 
   &:last-of-type {
     margin-bottom: 0;
@@ -44,6 +156,7 @@
     font-size: 13px;
     line-height: 1;
     color: rgba(255, 255, 255, 0.6);
+    letter-spacing: 0;
     word-wrap: break-word;
   }
 }
@@ -56,14 +169,12 @@
   padding-left: 30px;
 
   font-size: 16px;
-  line-height: 1.3;
+  line-height: 26px;
   word-wrap: break-word;
 
   &::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
 
     display: block;
 
@@ -74,6 +185,9 @@
 
   &--adress {
     &::before {
+      top: 4px;
+      left: 1px;
+
       width: 12px;
       height: 15px;
 
@@ -83,6 +197,9 @@
 
   &--email {
     &::before {
+      top: 10px;
+      left: 1px;
+
       width: 16px;
       height: 11px;
 
@@ -92,6 +209,9 @@
 
   &--phone {
     &::before {
+      top: 8px;
+      left: 0;
+
       width: 14px;
       height: 13px;
 
