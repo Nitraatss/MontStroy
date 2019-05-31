@@ -2,7 +2,7 @@
   position: relative;
 
   flex-grow: 1;
-  min-height: 330px;
+  padding-bottom: 80px;
   padding-left: 675px;
 }
 
@@ -14,7 +14,6 @@
   display: block;
   width: 100%;
   max-width: 580px;
-  min-height: 580px;
   margin: 0;
   padding-top: 47px;
   padding-right: 75px;
@@ -42,23 +41,21 @@
 
 .contacts__wrapper {
   display: flex;
-
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: flex-start;
-
-  padding-right: 30px;
   margin-bottom: 28px;
+  padding-right: 30px;
 }
 
 .contacts__input {
   width: 100%;
   max-width: 100%;
   margin: 0;
+  margin-bottom: 26px;
   padding: 0;
   padding-bottom: 14px;
-  margin-bottom: 26px;
 
   font-size: 20px;
   line-height: 50px;
@@ -109,17 +106,19 @@
   color: rgba(0, 0, 0, 0.502);
 
   a {
-    border-bottom: 1px dotted black;
     padding-bottom: 4px;
+
+    border-bottom: 1px dotted black;
   }
 }
 
 .contacts__submit {
   min-width: 230px;
   min-height: 60px;
+  margin: 0 auto;
+
   font-size: 25px;
   letter-spacing: 0.4px;
-  margin: 0 auto;
 }
 
 .contacts__list {
@@ -217,5 +216,94 @@
 
       background-image: url("../img/icons/contact-phone.svg");
     }
+  }
+}
+
+@media screen and (max-width: $desktop-width) {
+  .contacts {
+    padding-bottom: 48px;
+    padding-left: 454px;
+  }
+
+  .contacts__form {
+    left: 2px;
+
+    max-width: 412px;
+    padding-top: 30px;
+    padding-right: 50px;
+    padding-bottom: 30px;
+    padding-left: 50px;
+  }
+
+  .contacts__form-title {
+    margin-bottom: 20px;
+
+    font-size: 18px;
+    line-height: 36px;
+  }
+
+  .contacts__wrapper {
+    margin-bottom: 12px;
+    padding-right: 0;
+    padding-left: 2px;
+  }
+
+  .contacts__input {
+    margin-bottom: 18px;
+    padding-bottom: 14px;
+
+    font-size: 14px;
+    line-height: 36px;
+
+    &--name {
+      max-width: 117px;
+    }
+
+    &--phone {
+      max-width: 151px;
+    }
+
+    &--email {
+      margin-bottom: 18px;
+    }
+  }
+
+  .contacts__info {
+    margin-bottom: 30px;
+
+    font-size: 10px;
+    line-height: 12px;
+
+    a {
+      padding-bottom: 1px;
+    }
+  }
+
+  .contacts__submit {
+    min-width: 164px;
+    min-height: 43px;
+
+    font-size: 16px;
+    line-height: 1;
+  }
+
+  .contacts__list {
+    top: 0;
+  }
+
+  .contacts__item {
+    margin-bottom: 47px;
+
+    &:nth-of-type(2) {
+      margin-bottom: 36px;
+    }
+
+    span {
+      font-size: 12px;
+    }
+  }
+
+  .contacts__link {
+    font-size: 14px;
   }
 }
