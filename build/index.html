@@ -750,10 +750,22 @@
             <form class="contacts__form" method="post" action="#">
               <p class="contacts__form-title">Cвяжитесь с нами</p>
               <div class="contacts__wrapper">
-                <input class="contacts__input contacts__input--name" name="name" type="text" placeholder="Имя">
-                <input class="contacts__input contacts__input--phone" name="phone" type="tel" placeholder="Телефон">
-                <input class="contacts__input contacts__input--email" name="email" type="email" placeholder="E-mail">
-                <input class="contacts__input contacts__input--message" name="message" type="text" placeholder="Сообщение">
+                <label class="contacts__label contacts__label--name" for="name">
+                  <span>Имя</span>
+                  <input class="contacts__input contacts__input--name" name="name" id="name" type="text">
+                </label>
+                <label class="contacts__label contacts__label--phone" for="phone">
+                  <span>Телефон</span>
+                  <input class="contacts__input contacts__input--phone" name="phone" id="phone" type="tel">
+                </label>
+                <label class="contacts__label contacts__label--email" for="email">
+                  <span>E-mail</span>
+                  <input class="contacts__input contacts__input--email" name="email" id="email" type="email">
+                </label>
+                <label class="contacts__label contacts__label--message" for="message">
+                  <span>Сообщение</span>
+                  <input class="contacts__input contacts__input--message" name="message" id="message" type="text">
+                </label>
               </div>
               <p class="contacts__info">
                 Заполняя форму на сайте, вы соглашаетесь с нашей<br>
