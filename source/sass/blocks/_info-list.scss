@@ -1,0 +1,168 @@
+.info-list {
+  position: relative;
+  top: -7px;
+
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.info-list__item {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 45px;
+
+  &:nth-of-type(2) {
+    margin-bottom: 36px;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  span {
+    display: block;
+    max-width: 100%;
+    padding-left: 30px;
+
+    font-size: 13px;
+    line-height: 1;
+    color: rgba(255, 255, 255, 0.6);
+    letter-spacing: 0;
+    word-wrap: break-word;
+  }
+}
+
+.info-list__link {
+  position: relative;
+
+  display: block;
+  max-width: 100%;
+  padding-left: 30px;
+
+  font-size: 16px;
+  line-height: 26px;
+  word-wrap: break-word;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    display: block;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &--adress {
+    &::before {
+      top: 4px;
+      left: 1px;
+
+      width: 12px;
+      height: 15px;
+
+      background-image: url("../img/icons/contact-adress.svg");
+    }
+  }
+
+  &--email {
+    &::before {
+      top: 10px;
+      left: 1px;
+
+      width: 16px;
+      height: 11px;
+
+      background-image: url("../img/icons/contact-email.svg");
+    }
+  }
+
+  &--phone {
+    &::before {
+      top: 8px;
+      left: 0;
+
+      width: 14px;
+      height: 13px;
+
+      background-image: url("../img/icons/contact-phone.svg");
+    }
+  }
+}
+
+@media screen and (max-width: $desktop-width) {
+  .info-list {
+    top: 0;
+  }
+
+  .info-list__item {
+    margin-bottom: 47px;
+
+    &:nth-of-type(2) {
+      margin-bottom: 36px;
+    }
+
+    span {
+      font-size: 12px;
+    }
+  }
+
+  .info-list__link {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: $tablet-width) {
+  .info-list {
+    padding: 0 20px;
+
+    &--grey {
+      justify-content: flex-start;
+
+      color: #8d8d8d;
+
+      span {
+        color: #8d8d8d;
+      }
+
+      .info-list__item {
+        margin: 0;
+      }
+
+      .info-list__link {
+        &--adress {
+          &::before {
+            background-image: url("../img/icons/contact-adress-grey.svg");
+          }
+        }
+
+        &--email {
+          &::before {
+            background-image: url("../img/icons/contact-email-grey.svg");
+          }
+        }
+
+        &--phone {
+          &::before {
+            background-image: url("../img/icons/contact-phone-grey.svg");
+          }
+        }
+      }
+    }
+  }
+
+  .info-list__item {
+    max-width: 200px;
+    margin: 0 auto;
+
+    &:nth-of-type(2) {
+      margin-bottom: 0;
+    }
+  }
+}

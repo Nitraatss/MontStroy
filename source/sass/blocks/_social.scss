@@ -90,3 +90,31 @@
     }
   }
 }
+
+@media screen and (max-width: $tablet-width) {
+  .social {
+    padding: 0 20px;
+    width: 100%;
+  }
+
+  .social__item {
+    margin-right: 32px;
+  }
+
+  .social-link {
+    &--vk {
+      width: 40px;
+      height: 24px;
+    }
+
+    &--tw {
+      width: 31px;
+      height: 26px;
+    }
+
+    &--fb {
+      width: 15px;
+      height: 29px;
+    }
+  }
+}

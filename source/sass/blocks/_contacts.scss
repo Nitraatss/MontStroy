@@ -121,104 +121,6 @@
   letter-spacing: 0.4px;
 }
 
-.contacts__list {
-  position: relative;
-  top: -7px;
-
-  display: block;
-  width: 100%;
-  max-width: 100%;
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
-}
-
-.contacts__item {
-  width: 100%;
-  max-width: 100%;
-  margin-bottom: 45px;
-
-  &:nth-of-type(2) {
-    margin-bottom: 36px;
-  }
-
-  &:last-of-type {
-    margin-bottom: 0;
-  }
-
-  span {
-    display: block;
-    max-width: 100%;
-    padding-left: 30px;
-
-    font-size: 13px;
-    line-height: 1;
-    color: rgba(255, 255, 255, 0.6);
-    letter-spacing: 0;
-    word-wrap: break-word;
-  }
-}
-
-.contacts__link {
-  position: relative;
-
-  display: block;
-  max-width: 100%;
-  padding-left: 30px;
-
-  font-size: 16px;
-  line-height: 26px;
-  word-wrap: break-word;
-
-  &::before {
-    content: "";
-    position: absolute;
-
-    display: block;
-
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-
-  &--adress {
-    &::before {
-      top: 4px;
-      left: 1px;
-
-      width: 12px;
-      height: 15px;
-
-      background-image: url("../img/icons/contact-adress.svg");
-    }
-  }
-
-  &--email {
-    &::before {
-      top: 10px;
-      left: 1px;
-
-      width: 16px;
-      height: 11px;
-
-      background-image: url("../img/icons/contact-email.svg");
-    }
-  }
-
-  &--phone {
-    &::before {
-      top: 8px;
-      left: 0;
-
-      width: 14px;
-      height: 13px;
-
-      background-image: url("../img/icons/contact-phone.svg");
-    }
-  }
-}
-
 @media screen and (max-width: $desktop-width) {
   .contacts {
     padding-bottom: 48px;
@@ -286,24 +188,52 @@
     font-size: 16px;
     line-height: 1;
   }
+}
 
-  .contacts__list {
-    top: 0;
+@media screen and (max-width: $tablet-width) {
+  .contacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-bottom: 0;
+    padding-left: 0;
   }
 
-  .contacts__item {
-    margin-bottom: 47px;
+  .contacts__form {
+    position: static;
 
-    &:nth-of-type(2) {
-      margin-bottom: 36px;
-    }
-
-    span {
-      font-size: 12px;
-    }
+    order: 2;
+    max-width: 100%;
+    padding-top: 42px;
+    padding-right: 20px;
+    padding-bottom: 60px;
+    padding-left: 20px;
   }
 
-  .contacts__link {
-    font-size: 14px;
+  .contacts__info-list {
+    margin-bottom: 22px;
+  }
+
+  .contacts__wrapper {
+    margin-bottom: 24px;
+    padding: 0;
+  }
+
+  .contacts__input {
+    &--name {
+      flex: 1;
+      max-width: none;
+      margin-right: 42px;
+    }
+
+    &--phone {
+      flex: 1;
+      max-width: none;
+    }
+
+    &--email {
+      margin-bottom: 18px;
+    }
   }
 }

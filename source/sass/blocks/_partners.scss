@@ -29,11 +29,24 @@
   margin-right: 30px;
 
   background-color: rgb(255, 255, 255);
-  border: 1px solid rgb(215, 215, 215);
-  opacity: 0.5;
+  border: 1px solid rgba(215, 215, 215, 0.5);
 
   &:last-of-type {
     margin-right: 0;
+  }
+
+  a {
+    &:focus {
+      outline: none;
+    }
+
+    &:focus,
+    &:hover,
+    &:active {
+      .partners__logo {
+        opacity: 1;
+      }
+    }
   }
 
   picture {
@@ -50,6 +63,9 @@
   max-height: 100%;
 
   background-color: white;
+  opacity: 0.5;
+
+  transition: opacity 0.3s ease-in-out;
 
   @include object-fit(contain, center);
 }
@@ -104,7 +120,6 @@
   padding: 0;
 
   font-size: 0;
-  cursor: pointer;
 
   background-color: transparent;
   background-image: url("../img/icons/arrow-right.svg");
@@ -112,6 +127,7 @@
   background-position: 27px center;
   background-size: 16px 6px;
   border: 2px solid rgb(36, 36, 36);
+  cursor: pointer;
 
   transition: background-color 0.3s ease-in-out;
 
@@ -156,12 +172,12 @@
   .partners__slide {
     max-width: 256px;
     height: 163px;
+    margin-right: 0;
 
     background-color: white;
     border: 0;
     box-shadow: 0 10px 18px 2px rgba(0, 0, 0, 0.05);
     opacity: 1;
-    margin-right: 0;
 
     &--active {
       z-index: 5;
@@ -255,16 +271,11 @@
 
     border: 1px solid rgb(215, 215, 215);
     box-shadow: none;
-    opacity: 0.5;
 
     &--active {
       display: block;
 
       transform: none;
     }
-  }
-
-  .partners__logo {
-    opacity: 1;
   }
 }
