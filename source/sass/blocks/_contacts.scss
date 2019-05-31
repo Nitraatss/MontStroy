@@ -163,12 +163,10 @@
     padding-left: 2px;
   }
 
-  .contacts__input {
-    margin-bottom: 18px;
-    padding-bottom: 14px;
-
+  .contacts__label {
+    margin-bottom: 20px;
     font-size: 14px;
-    line-height: 36px;
+    line-height: 30px;
 
     &--name {
       max-width: 117px;
@@ -179,8 +177,12 @@
     }
 
     &--email {
-      margin-bottom: 18px;
+      margin-bottom: 20px;
     }
+  }
+
+  .contacts__input {
+    font-size: 14px;
   }
 
   .contacts__info {
