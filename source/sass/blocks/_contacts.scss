@@ -233,22 +233,28 @@
 
     order: 2;
     max-width: 100%;
-    padding-top: 42px;
+    padding-top: 39px;
     padding-right: 20px;
-    padding-bottom: 60px;
+    padding-bottom: 62px;
     padding-left: 20px;
   }
 
   .contacts__info-list {
-    margin-bottom: 22px;
+    margin-bottom: 26px;
+  }
+
+  .contacts__form-title {
+    margin-bottom: 16px;
   }
 
   .contacts__wrapper {
-    margin-bottom: 24px;
+    margin-bottom: 20px;
     padding: 0;
   }
 
   .contacts__label {
+    margin-bottom: 16px;
+
     &--name {
       flex: 1;
       max-width: none;
@@ -261,7 +267,11 @@
     }
 
     &--email {
-      margin-bottom: 18px;
+      margin-bottom: 22px;
     }
+  }
+
+  .contacts__info {
+    margin-bottom: 33px;
   }
 }
