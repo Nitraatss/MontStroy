@@ -48,6 +48,16 @@
   line-height: 26px;
   word-wrap: break-word;
 
+  &:focus {
+    outline: none;
+  }
+
+  &:focus,
+  &:hover,
+  &:active {
+    text-decoration: underline;
+  }
+
   &::before {
     content: "";
     position: absolute;
