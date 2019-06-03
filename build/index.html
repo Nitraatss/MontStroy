@@ -14,6 +14,7 @@
     <link rel="preload" href="./fonts/Roboto-Regular.woff2" as="font">
     <link rel="preload" href="./fonts/Roboto-Medium.woff2" as="font">
     <link rel="preload" href="./fonts/Roboto-Bold.woff2" as="font">
+    <link rel="stylesheet" type="text/css" href="./assets/swiper/swiper.min.css">
     <link rel="stylesheet" type="text/css" href="./css/style.min.css">
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
   </head>
@@ -613,55 +614,105 @@
           <h2 class="partners__block-title block-title">
             <span>Партнеры</span>
           </h2>
-          <div class="partners__slider">
-            <div class="partners__slide partners__slide--previous">
-              <a href="#">
-                <picture>
-                  <source type="image/webp" srcset="
-                      ./img/partner-ava.webp 1x,
-                      ./img/partner-ava.webp 2x
-                    ">
+          <div class="partners__slider swiper-container">
+            <div class="swiper-wrapper">
+              <div class="partners__slide partners__slide--previous swiper-slide">
+                <a href="#">
+                  <picture>
+                    <source type="image/webp" srcset="
+                        ./img/partner-ava.webp 1x,
+                        ./img/partner-ava.webp 2x
+                      ">
+                    <img class="partners__logo" src="./img/partner-ava.png" srcset="./img/partner-ava.png 2x" width="270" height="135" alt="AVA Company">
+                  </picture>
+                </a>
+              </div>
+              <div class="partners__slide partners__slide--active swiper-slide">
+                <a href="#">
+                  <picture>
+                    <source type="image/webp" srcset="
+                        ./img/partner-mirror.webp 1x,
+                        ./img/partner-mirror.webp 2x
+                      ">
 
-                  <img class="partners__logo" src="./img/partner-ava.png" srcset="./img/partner-ava.png 2x" width="270" height="135" alt="AVA Company">
-                </picture>
-              </a>
-            </div>
-            <div class="partners__slide partners__slide--active">
-              <a href="#">
-                <picture>
-                  <source type="image/webp" srcset="
-                      ./img/partner-mirror.webp 1x,
-                      ./img/partner-mirror.webp 2x
-                    ">
+                    <img class="partners__logo" src="./img/partner-mirror.png" srcset="./img/partner-mirror.png 2x" width="270" height="135" alt="MIRROR Buisness Center">
+                  </picture>
+                </a>
+              </div>
+              <div class="partners__slide partners__slide--next swiper-slide">
+                <a href="#">
+                  <picture>
+                    <source type="image/webp" srcset="
+                        ./img/partner-shield.webp 1x,
+                        ./img/partner-shield.webp 2x
+                      ">
 
-                  <img class="partners__logo" src="./img/partner-mirror.png" srcset="./img/partner-mirror.png 2x" width="270" height="135" alt="MIRROR Buisness Center">
-                </picture>
-              </a>
-            </div>
-            <div class="partners__slide partners__slide--next">
-              <a href="#">
-                <picture>
-                  <source type="image/webp" srcset="
-                      ./img/partner-shield.webp 1x,
-                      ./img/partner-shield.webp 2x
-                    ">
+                    <img class="partners__logo" src="./img/partner-shield.png" srcset="./img/partner-shield.png 2x" width="270" height="135" alt="SHIELD Охранное предприятие">
+                  </picture>
+                </a>
+              </div>
+              <div class="partners__slide swiper-slide">
+                <a href="#">
+                  <picture>
+                    <source type="image/webp" srcset="
+                        ./img/partner-heat.webp 1x,
+                        ./img/partner-heat.webp 2x
+                      ">
 
-                  <img class="partners__logo" src="./img/partner-shield.png" srcset="./img/partner-shield.png 2x" width="270" height="135" alt="SHIELD Охранное предприятие">
-                </picture>
-              </a>
-            </div>
-            <div class="partners__slide">
-              <a href="#">
-                <picture>
-                  <source type="image/webp" srcset="
-                      ./img/partner-heat.webp 1x,
-                      ./img/partner-heat.webp 2x
-                    ">
+                    <img class="partners__logo" src="./img/partner-heat.png" srcset="./img/partner-heat.png 2x" width="270" height="135" alt="ЗАО НТФ ТЕПЛОДОМЭНЕРГ">
+                  </picture>
+                </a>
+              </div>
+              <div class="partners__slide partners__slide--previous swiper-slide">
+                <a href="#">
+                  <picture>
+                    <source type="image/webp" srcset="
+                        ./img/partner-ava.webp 1x,
+                        ./img/partner-ava.webp 2x
+                      ">
+                    <img class="partners__logo" src="./img/partner-ava.png" srcset="./img/partner-ava.png 2x" width="270" height="135" alt="AVA Company">
+                  </picture>
+                </a>
+              </div>
+              <div class="partners__slide partners__slide--active swiper-slide">
+                <a href="#">
+                  <picture>
+                    <source type="image/webp" srcset="
+                        ./img/partner-mirror.webp 1x,
+                        ./img/partner-mirror.webp 2x
+                      ">
 
-                  <img class="partners__logo" src="./img/partner-heat.png" srcset="./img/partner-heat.png 2x" width="270" height="135" alt="ЗАО НТФ ТЕПЛОДОМЭНЕРГ">
-                </picture>
-              </a>
+                    <img class="partners__logo" src="./img/partner-mirror.png" srcset="./img/partner-mirror.png 2x" width="270" height="135" alt="MIRROR Buisness Center">
+                  </picture>
+                </a>
+              </div>
+              <div class="partners__slide partners__slide--next swiper-slide">
+                <a href="#">
+                  <picture>
+                    <source type="image/webp" srcset="
+                        ./img/partner-shield.webp 1x,
+                        ./img/partner-shield.webp 2x
+                      ">
+
+                    <img class="partners__logo" src="./img/partner-shield.png" srcset="./img/partner-shield.png 2x" width="270" height="135" alt="SHIELD Охранное предприятие">
+                  </picture>
+                </a>
+              </div>
+              <div class="partners__slide swiper-slide">
+                <a href="#">
+                  <picture>
+                    <source type="image/webp" srcset="
+                        ./img/partner-heat.webp 1x,
+                        ./img/partner-heat.webp 2x
+                      ">
+
+                    <img class="partners__logo" src="./img/partner-heat.png" srcset="./img/partner-heat.png 2x" width="270" height="135" alt="ЗАО НТФ ТЕПЛОДОМЭНЕРГ">
+                  </picture>
+                </a>
+              </div>
             </div>
+
+            <div class="swiper-pagination"></div>
           </div>
           <div class="partners__controls">
             <button class="partners__button partners__button--previous" type="button">
@@ -670,15 +721,6 @@
             <button class="partners__button partners__button--next" type="button">
               Вперед
             </button>
-
-            <div class="partners__dots">
-              <button class="partners__dot" type="button">Переключатель</button>
-              <button class="partners__dot" type="button">Переключатель</button>
-              <button class="partners__dot partners__dot--active" type="button">
-                Переключатель
-              </button>
-              <button class="partners__dot" type="button">Переключатель</button>
-            </div>
           </div>
         </div>
       </section>
@@ -804,6 +846,7 @@
 
     <script src="./assets/object-fit-polyfill/ofi.min.js"></script>
     <script src="./assets/picture-polyfill/picturefill.min.js"></script>
+    <script src="./assets/swiper/swiper.min.js"></script>
     <script src="./js/index.min.js"></script>
   </body>
 </html>
