@@ -1,3 +1,5 @@
-import map from "./map";
+import initiateMenu from "./menu";
+import initiateMap from "./map";
 
-map();
+initiateMenu();
+initiateMap();

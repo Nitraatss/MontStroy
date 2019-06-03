@@ -4,7 +4,7 @@ const ICONS_SIZES = {
   MOBILE: {sizes: [21, 28], offset: [-11, -18]}
 };
 
-const map = () => {
+const initiateMap = () => {
   document.addEventListener(`DOMContentLoaded`, () => {
     const setIconSizes = () => {
       let icon;
@@ -63,4 +63,4 @@ const map = () => {
   });
 };
 
-export default map;
+export default initiateMap;
