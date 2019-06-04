@@ -9,6 +9,8 @@ const initiatePartners = () => {
     slidesPerView: 4,
     allowTouchMove: true,
     spaceBetween: 30,
+    loop: true,
+
     breakpoints: {
       767: {
         slidesPerView: 1,
