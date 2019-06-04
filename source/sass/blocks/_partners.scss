@@ -161,7 +161,7 @@
 
 @media screen and (max-width: $desktop-width) {
   .partners {
-    margin-bottom: 66px;
+    margin-bottom: 48px;
   }
 
   .partners__block-title {
@@ -171,7 +171,7 @@
   .partners__slider {
     max-width: 724px;
     margin: 0 auto;
-    padding-bottom: 32px;
+    padding-bottom: 50px;
 
     .swiper-slide {
       opacity: 0;
@@ -235,7 +235,7 @@
   }
 
   .swiper-pagination {
-    bottom: 0 !important;
+    bottom: 18px !important;
 
     display: flex;
     flex-direction: row;
@@ -306,5 +306,9 @@
 
     border: 1px solid rgb(215, 215, 215);
     box-shadow: none;
+  }
+
+  .swiper-pagination {
+    bottom: 0 !important;
   }
 }
