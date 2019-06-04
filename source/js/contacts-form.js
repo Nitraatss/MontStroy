@@ -1,6 +1,7 @@
 const initiateContactsForm = () => {
   const contacts = document.querySelector(`.contacts`);
   const contactsForm = contacts.querySelector(`.contacts__form`);
+  const inputs = [].slice.call(contactsForm.querySelectorAll(`input`));
   const inputName = contactsForm.querySelector(`#name`);
   const inputPhone = contactsForm.querySelector(`#phone`);
   const inputEmail = contactsForm.querySelector(`#email`);
@@ -47,7 +48,11 @@ const initiateContactsForm = () => {
   submitButton.addEventListener(`click`, (evt) => {
     evt.preventDefault();
 
-    contactsForm.reportValidity();
+    if (!contactsForm.reportValidity()) {
+      contactsForm.reportValidity();
+    } else {
+      contactsForm.submit();
+    }
   });
 };
 
