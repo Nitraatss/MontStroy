@@ -7,7 +7,7 @@ const initiateContactsForm = () => {
   const inputEmail = contactsForm.querySelector(`#email`);
   const submitButton = contactsForm.querySelector(`.contacts__submit `);
 
-  inputName.addEventListener(`keyup`, (evt) => {
+  inputName.addEventListener(`input`, (evt) => {
     const allowedSymbols = /^[A-Za-zА-Яа-яЁё\s]+$/;
     if (!allowedSymbols.test(evt.target.value)) {
       evt.target.value = evt.target.value.substring(
@@ -17,7 +17,7 @@ const initiateContactsForm = () => {
     }
   });
 
-  inputPhone.addEventListener(`keyup`, (evt) => {
+  inputPhone.addEventListener(`input`, (evt) => {
     const phonePattern = /7-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}/;
     const allowedSymbols = /[A-Za-zА-Яа-яЁё]/g;
 
@@ -35,7 +35,7 @@ const initiateContactsForm = () => {
     }
   });
 
-  inputEmail.addEventListener(`keyup`, (evt) => {
+  inputEmail.addEventListener(`input`, (evt) => {
     const emailPattern = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
     if (!emailPattern.test(evt.target.value)) {

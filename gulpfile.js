@@ -48,7 +48,7 @@ gulp.task(`style`, function (done) {
 
 gulp.task(`scripts`, function (done) {
   return gulp
-    .src([`source/js/**/*.js`])
+    .src([`source/js/**/index.js`])
     .pipe(plumber())
     .pipe(sourcemaps.init())
     .pipe(rollup({plugins: [resolve(), commonjs()]}, `iife`))
