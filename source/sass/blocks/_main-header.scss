@@ -7,7 +7,9 @@
 
 .main-header__wrapper {
   @include wrapper;
+}
 
+.main-header__wrapper {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -24,6 +26,7 @@
   display: block;
   width: 141px;
   height: 60px;
+
   background-color: transparent;
 }
 
@@ -93,10 +96,10 @@
   padding-right: 35px;
   padding-bottom: 14px;
   padding-left: 36px;
-  text-transform: none;
 
   font-size: 16px;
   line-height: 1;
+  text-transform: none;
 }
 
 @media screen and (max-width: $desktop-width) {
@@ -274,8 +277,8 @@
   }
 
   .main-header__list {
-    max-width: 100%;
     width: 100%;
+    max-width: 100%;
   }
 
   .main-header__phone {

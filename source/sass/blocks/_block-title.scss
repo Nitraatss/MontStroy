@@ -12,7 +12,6 @@
   font-weight: 700;
   font-size: 30px;
   line-height: 50px;
-
   text-transform: uppercase;
   letter-spacing: 1.7px;
 
@@ -23,8 +22,10 @@
 
   &::after {
     content: "";
+
     flex-grow: 1;
     height: 2px;
+
     background-color: black;
   }
 }
@@ -44,6 +45,7 @@
 @media screen and (max-width: $tablet-width) {
   .block-title {
     margin-left: 0;
+
     font-size: 20px;
   }
 }

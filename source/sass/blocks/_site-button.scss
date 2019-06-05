@@ -9,10 +9,9 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 26px;
+  color: white;
   text-transform: uppercase;
   word-wrap: break-word;
-
-  color: white;
 
   background-color: transparent;
   border: 1px solid $site-color;
@@ -27,8 +26,9 @@
   &:focus,
   &:hover,
   &:active {
-    background-color: $site-color;
     color: black;
+
+    background-color: $site-color;
     box-shadow: 0 2px 4.75px 0.25px rgba(0, 255, 215, 0.6);
   }
 
