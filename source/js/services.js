@@ -17,6 +17,13 @@ const initiateServices = () => {
     serviceList.style.zIndex = `${40 - singleServices.length - index}`;
 
     serviceTitle.addEventListener(`click`, () => {
+      singleServices.forEach((service) => {
+        const serviceTitle = service.querySelector(`.single-service__title`);
+        const serviceList = service.querySelector(`.single-service__list`);
+        serviceTitle.classList.remove(`single-service__title--active`);
+        serviceList.classList.remove(`single-service__list--active`);
+      });
+
       toggleServiceList(serviceTitle, serviceList);
     });
 
