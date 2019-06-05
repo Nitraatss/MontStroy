@@ -77,13 +77,12 @@
 
 .partners__controls {
   position: absolute;
-  top: 0;
+  top: 8px;
   right: 15px;
 
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  min-height: 50px;
+  justify-content: flex-start;
+  align-items: flex-start;
 
   background-color: $bg-color;
 
