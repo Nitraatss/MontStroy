@@ -85,6 +85,11 @@
   &:last-of-type {
     margin-bottom: 0;
   }
+
+  textarea {
+    resize: none;
+    height: 27px;
+  }
 }
 
 .contacts__input {
@@ -192,6 +197,10 @@
     &--email {
       margin-bottom: 20px;
     }
+
+    textarea {
+      height: 19px;
+    }
   }
 
   .contacts__input {
@@ -268,6 +277,10 @@
 
     &--email {
       margin-bottom: 22px;
+    }
+
+    textarea {
+      height: 19px;
     }
   }
 
